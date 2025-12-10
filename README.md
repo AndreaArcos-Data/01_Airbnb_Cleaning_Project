@@ -1,4 +1,4 @@
-# Proyecto de limpieza y modelado de precios de Airbnb – NYC 2019
+# Proyecto de limpieza y modelado de precios de Airbnb NYC 2019
 Análisis Exploratorio · Limpieza Avanzada · Ingeniería de Características · Modelos Predictivos
 
 Este proyecto forma parte del portafolio de análisis y limpieza de datos.
@@ -56,12 +56,24 @@ Resultado final: 79 columnas para modelado
 - distribución de datos en prueba y entrenamiento.
 - Modelo para determinar características e importancia de las variables
 - Eliminación de variables
+  ![Random Forest Feature Importance](figures/feature_importance_rf.png)
+
 # Modelos 
   1. Regresión Lineal
   2. Random Forest
   3. Gradient Boosting
   4. XGBoost (baseline y mejorado con feature engineering)
-     
+     [Resultados distintos modelos](figures/resultados_modelos_tabla.png)
+   
 # Ingeniería de Características (Feature Engineering)
 Se añadió la variable Distancia al Times Square usando fórmula de Haversine
 
+# Conclusiones 
+- La regresión lineal sirve únicamente como modelo base
+- Los modelo basados en árboles mejoran considerablemente el modelo
+- XGBoost es el mejor modelo, como se esperaba, debido a que es capaz de capturar patrones de mayor complejidad.
+- Aumentar la variable de distancia no mejora el modelo, puede deberse a la redundancia de la infoamción que captura la nueva variable, con la que ya existe en las variables de barrios o las variables espaciales.
+
+  # Autor
+  Andrea Arcos
+  aarcos.47@gmail.com 

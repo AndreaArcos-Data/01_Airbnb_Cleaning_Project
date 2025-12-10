@@ -23,7 +23,8 @@ Seleccionar el mejor modelo según:
    # Limpieza de datos (Notebook 1)
    - Eliminación de columnas irrelevantes
    - Conversión de variables de fecha y numéricas
-   - tratamiento de valores nulos ![Valores nulos](figures/mapa_nulos.png)
+   - tratamiento de valores nulos
+     ![Valores nulos](figures/mapa_calor_nulos.png)
   
   # Detección y tratamiento de outliers 
   Se revisaron variables numéricas clave:
@@ -32,12 +33,13 @@ Seleccionar el mejor modelo según:
 - number_of_reviews
 - reviews_per_month
 - availability_365
+![Outliers](figures/outliers.png)
 
   Métodos aplicados:
 ✔ Winsorización
 ✔ Topes superiores para valores extremos
 ✔ Transformación logarítmica
-![Distribución del precio](figures/distribucion_price.png)
+![Distribución del precio](figures/.distribucion_final_price.png)
 
 # Variables categóricas 
 ✔ Reducción de cardinalidad en neighbourhood
@@ -50,13 +52,12 @@ Aplicado para:
 - neighbourhood_simplified
 
 Resultado final: 79 columnas para modelado
-
+![correlaciones_mapadecalor](figures/.correlaciones_mapadecalor.png)
  # MODELADO (Notebook 2)
 # Preparación de datos 
 - distribución de datos en prueba y entrenamiento.
 - Modelo para determinar características e importancia de las variables
 - Eliminación de variables
-  ![Random Forest Feature Importance](figures/feature_importance_rf.png)
 
 # Modelos 
   1. Regresión Lineal

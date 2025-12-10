@@ -68,7 +68,8 @@ Resultado final: 79 columnas para modelado
   2. Random Forest
   3. Gradient Boosting
   4. XGBoost (baseline y mejorado con feature engineering)
-     [Resultados distintos modelos](figure/resultados_modelos_tabla.png)
+
+ ![Resultados distintos modelos](figure/resultados_modelos_tabla.png)
    
 # Ingeniería de Características (Feature Engineering)
 Se añadió la variable Distancia al Times Square usando fórmula de Haversine

@@ -36,10 +36,11 @@ Seleccionar el mejor modelo según:
 ![Outliers](figures/outliers.png)
 
   Métodos aplicados:
-✔ Winsorización
-✔ Topes superiores para valores extremos
-✔ Transformación logarítmica
-![Distribución del precio](figures/.distribucion_final_price.png)
+  - Winsorización
+  - Topes superiores para valores extremos
+  - Transformación logarítmica
+
+![Distribución del precio](figures/distribucion_final_price.png)
 
 # Variables categóricas 
 ✔ Reducción de cardinalidad en neighbourhood
@@ -52,7 +53,7 @@ Aplicado para:
 - neighbourhood_simplified
 
 Resultado final: 79 columnas para modelado
-![correlaciones_mapadecalor](figures/.correlaciones_mapadecalor.png)
+![correlaciones_mapadecalor](figures/correlaciones_mapadecalor.png)
  # MODELADO (Notebook 2)
 # Preparación de datos 
 - distribución de datos en prueba y entrenamiento.

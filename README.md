@@ -24,7 +24,8 @@ Seleccionar el mejor modelo según:
    - Eliminación de columnas irrelevantes
    - Conversión de variables de fecha y numéricas
    - tratamiento de valores nulos
-     ![Valores nulos](figures/mapa_calor_nulos.png)
+
+  ![Valores nulos](figure/mapa_calor_nulos.png)
   
   # Detección y tratamiento de outliers 
   Se revisaron variables numéricas clave:
@@ -33,14 +34,15 @@ Seleccionar el mejor modelo según:
 - number_of_reviews
 - reviews_per_month
 - availability_365
-![Outliers](figures/outliers.png)
+  
+![Outliers](figure/outliers.png)
 
   Métodos aplicados:
   - Winsorización
   - Topes superiores para valores extremos
   - Transformación logarítmica
 
-![Distribución del precio](figures/distribucion_final_price.png)
+![Distribución del precio](figure/distribucion_final_price.png)
 
 # Variables categóricas 
 ✔ Reducción de cardinalidad en neighbourhood
@@ -53,7 +55,8 @@ Aplicado para:
 - neighbourhood_simplified
 
 Resultado final: 79 columnas para modelado
-![correlaciones_mapadecalor](figures/correlaciones_mapadecalor.png)
+![correlaciones_mapadecalor](figure/correlaciones_mapadecalor.png)
+
  # MODELADO (Notebook 2)
 # Preparación de datos 
 - distribución de datos en prueba y entrenamiento.
@@ -65,7 +68,7 @@ Resultado final: 79 columnas para modelado
   2. Random Forest
   3. Gradient Boosting
   4. XGBoost (baseline y mejorado con feature engineering)
-     [Resultados distintos modelos](figures/resultados_modelos_tabla.png)
+     [Resultados distintos modelos](figure/resultados_modelos_tabla.png)
    
 # Ingeniería de Características (Feature Engineering)
 Se añadió la variable Distancia al Times Square usando fórmula de Haversine
